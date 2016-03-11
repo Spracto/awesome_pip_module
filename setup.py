@@ -15,7 +15,7 @@ with open("README.rst", "rb") as f:
 
 setup(
    name = "pip_module",
-   packages = ["new_html"],
+   packages = ["pip_module"],
    entry_points = {
        "console_scripts": ['pip_module = pip_module.awesome_module:awesome_module']
        },
@@ -24,5 +24,5 @@ setup(
    long_description = long_descr,
    author = "Barclay Iversen AKA Spracto",
    author_email = "barclayiversen@gmail.com",
-   url = "https://github.com/oscarvazquez/command_line_tool_demo"
+   url = "https://github.com/Spracto/awesome_pip_module"
 )
