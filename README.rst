@@ -8,6 +8,10 @@ For your convenience the KFT module works on both windows and *nix based systems
 
 Usage is as follows:
 
+	installation:
+	sudo python setup.py sdist
+	sudo python setup.py install
+	
 	KFT is initialized from the command line, if you don't have Python installed in your path you will have to navigate to wherever python is installed to use it.
 
 	KFT module will ask you a series of questions pertaining to your project. Simply answer with either a 1 or anything else. Inputs are configured to execute code based on input of either 1 or not 1, so anything besides 1 is considered "other".
