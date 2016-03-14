@@ -117,16 +117,16 @@ def awesome_module():
     if project_template == "1" and folder_location_decision != "1":
         server_file = "server.py"
         new_file = open(folder_location + "/" + project_name + "/" + server_file, 'w')
-        new_file.write('from flask import Flask, render_template, request, redirect, session\napp = Flask(__name__)\napp.secret_key =" "\n@app.route("/")\ndef index():\n\treturn render_template("index.html")\n')
-        print "server.py file will be written with your routes!"
+        new_file.write('from flask import Flask, render_template, request, redirect, session\napp = Flask(__name__)\napp.secret_key =" "\n\n@app.route("/")\ndef index():\n\treturn render_template("index.html")\n')
+        print "server.py file will be written with your routes! You're all done. Have fun!"
         for keys, data in page_amount.items():
             new_file.write('\n@app.route("/'+keys+'")\ndef '+keys+'():\n\treturn render_template("'+data+'")\n')
         new_file.write('\napp.run(debug=True)')
     elif project_template == "1" and folder_location_decision == "1":
         server_file = "server.py"
         new_file = open(project_name + "/" + server_file, 'w')
-        new_file.write('from flask import Flask, render_template, request, redirect, session\napp = Flask(__name__)\napp.secret_key =" "\n@app.route("/")\ndef index():\n\treturn render_template("index.html")\n')
-        print "server.py file will be written with your routes!"
+        new_file.write('from flask import Flask, render_template, request, redirect, session\napp = Flask(__name__)\napp.secret_key =" "\n\n@app.route("/")\ndef index():\n\treturn render_template("index.html")\n')
+        print "server.py file will be written with your routes! You're all done. Have fun!"
         for keys, data in page_amount.items():
             new_file.write('\n@app.route("/'+keys+'")\ndef '+keys+'():\n\treturn render_template("'+data+'")\n')
         new_file.write('\napp.run(debug=True)')
