@@ -70,7 +70,7 @@ def awesome_module():
     else:
         folder_location = raw_input('Ok, where do you want to put the new project? ')
         os.mkdir(folder_location + "/" + project_name)
-    project_contents = raw_input('Would you like me to create static and template folders? Type 1 for yes and just hit enter for no: ')
+    project_contents = raw_input('Would you like to create static and template folders? Type 1 for yes and just hit enter for no: ')
     if project_contents == "1" and folder_location_decision != "1":
         os.mkdir(folder_location + "/" + project_name + "/static")
         os.mkdir(folder_location + "/" + project_name + "/templates")
@@ -111,14 +111,14 @@ def awesome_module():
     if project_template == "1" and folder_location_decision != "1":
         server_file = "server.py"
         new_file = open(folder_location + "/" + project_name + "/" + server_file, 'w')
-        new_file.write('from flask import Flask, render_template, request, redirect, session\napp = Flask(__name__)\napp.secret_key =\n@app.route("/")\ndef index():\n\treturn render_template("index.html")')
+        new_file.write('from flask import Flask, render_template, request, redirect, session\napp = Flask(__name__)\napp.secret_key =" "\n@app.route("/")\ndef index():\n\treturn render_template("index.html")\n')
         for keys, data in page_amount.items():
             new_file.write('\n@app.route("/'+keys+'")\n\ndef '+keys+'():\n\treturn render_template("'+data+'")\n')
         new_file.write('\napp.run(debug=True)')
     elif project_template == "1" and folder_location_decision == "1":
         server_file = "server.py"
         new_file = open(project_name + "/" + server_file, 'w')
-        new_file.write('from flask import Flask, render_template, request, redirect, session\napp = Flask(__name__)\napp.secret_key =\n@app.route("/")\ndef index():\n\treturn render_template("index.html")')
+        new_file.write('from flask import Flask, render_template, request, redirect, session\napp = Flask(__name__)\napp.secret_key =" "\n@app.route("/")\ndef index():\n\treturn render_template("index.html")\n')
         for keys, data in page_amount.items():
             new_file.write('\n@app.route("/'+keys+'")\n\ndef '+keys+'():\n\treturn render_template("'+data+'")\n')
         new_file.write('\napp.run(debug=True)')
