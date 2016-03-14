@@ -1,4 +1,4 @@
-kickass_flask_template_module(KFT) version 0.1.0:
+kickass_flask_template_module(KFT) version 0.1.01:
 
 Welcome and thank you for considering the KFT module. The purpose of this module is to streamline the process of starting a new project in flask.
 

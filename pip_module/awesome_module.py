@@ -54,12 +54,12 @@
 
 
 
-__version__="0.1.0"
+__version__="0.1.1"
 import sys
 import os
 # class awesome_module():
 def awesome_module():
-    print("Executing kickass_flask_template_module version %s." % __version__)
+    print("Executing mkflask_module version %s." % __version__)
   # print("List of argument strings: %s" % sys.argv[1:])
     print "Let's build stuff!"
     project_name = raw_input('What is your project going to be called? ')

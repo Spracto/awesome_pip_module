@@ -1,5 +1,5 @@
 import re
-from setuptools import setup
+from setuptools import setup, find_packages
 
 
 version = re.search(
@@ -14,10 +14,10 @@ with open("README.rst", "rb") as f:
 
 
 setup(
-   name = "pip_module",
-   packages = ["pip_module"],
+   name = "mkflask_module",
+   packages = find_packages(),
    entry_points = {
-       "console_scripts": ['pip_module = pip_module.awesome_module:awesome_module']
+       "console_scripts": ['mkflask = pip_module.awesome_module:awesome_module']
        },
    version = version,
    description = "Python module",
